@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct ogrenci{
+	char isim[10];
+	int no;
+};
+
+int main(int argc, char *argv[]) {
+	
+	struct ogrenci ogr[3];
+	int i;
+	
+	 for(i=0; i<3;i++) {
+	 	
+	 	printf("%d ninci ogrencinin bilgierini giriniz.",i+1);
+	 	scanf("%s %d", &ogr[i].isim, &ogr[i].no);
+	 }
+	
+	 for(i=0; i<3;i++) {
+	 	
+	 	printf("%d ninci ogrencinin bilgieri %s %d\n",i+1, ogr[i].isim, ogr[i].no);
+	
+	
+}
+	
+	
+	
+	return 0;
+}
